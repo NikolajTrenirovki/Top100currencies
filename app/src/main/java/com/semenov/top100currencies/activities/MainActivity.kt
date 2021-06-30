@@ -1,16 +1,24 @@
-package com.semenov.top100currencies
+package com.semenov.top100currencies.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import com.semenov.top100currencies.activities.AboutActivity
+import com.semenov.top100currencies.R
+import com.semenov.top100currencies.fragments.CurrenciesListFragment
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        if (savedInstanceState == null) {
+            supportFragmentManager
+                .beginTransaction()
+                .add(R.id.container, CurrenciesListFragment(), null)
+                .commit()
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

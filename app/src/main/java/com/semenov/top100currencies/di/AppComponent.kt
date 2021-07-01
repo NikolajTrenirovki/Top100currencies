@@ -1,6 +1,8 @@
 package com.semenov.top100currencies.di
 
+import com.semenov.top100currencies.activities.ChartActivity
 import com.semenov.top100currencies.activities.MainActivity
+import com.semenov.top100currencies.chart.LatestChart
 import com.semenov.top100currencies.fragments.CurrenciesListFragment
 import com.semenov.top100currencies.mvp.presenter.CurrenciesPresenter
 import com.semenov.top100currencies.mvp.presenter.LatestChartPresenter
@@ -18,4 +20,8 @@ interface AppComponent {
     fun inject(presenter: LatestChartPresenter)
 
     fun inject(fragment: CurrenciesListFragment)
+
+    fun inject(chart: LatestChart)
+
+    fun inject(activity: ChartActivity)
 }

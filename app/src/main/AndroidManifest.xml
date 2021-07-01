@@ -10,8 +10,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Top100currencies">
-        <activity android:name=".activities.AboutActivity"
-            android:parentActivityName=".activities.MainActivity"></activity>
+        <activity
+            android:name=".activities.ChartActivity"
+            android:label="@string/title_activity_chart"
+            android:theme="@style/Theme.Top100currencies.NoActionBar"></activity>
+        <activity
+            android:name=".activities.AboutActivity"
+            android:parentActivityName=".activities.MainActivity" />
         <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

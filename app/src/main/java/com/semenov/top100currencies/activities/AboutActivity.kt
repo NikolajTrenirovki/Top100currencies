@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-//import com.google.android.gms.ads.AdRequest
 import kotlinx.android.synthetic.main.activity_about.*
 import com.semenov.top100currencies.R
 

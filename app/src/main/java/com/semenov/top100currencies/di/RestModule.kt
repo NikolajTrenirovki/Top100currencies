@@ -5,7 +5,6 @@ import com.google.gson.GsonBuilder
 import com.semenov.top100currencies.rest.CoinGeckoApi
 import dagger.Module
 import dagger.Provides
-//import info.fandroid.topcrypts.rest.CoinGeckoApi
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
